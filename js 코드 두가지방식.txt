@@ -1,0 +1,35 @@
+1.python 활용
+import frida, sys
+
+def on_message(message, data):
+    print(message)
+
+PACKAGE_NAME = "uncrackable1"
+
+jscode = """
+console.log("[+] Start Script");
+
+Java.perform(function(){
+    console.log("[+] Hooking System.exit");
+    var exitClass = Java.use("java.lang.System"); #후킹 대상 함수가 존재하는 클래스 ,well-known 메서드는 공식문서 참고
+    exitClass.exit.implementation = function(){ #현재 클래스를 hook_target 으로 재구성한다.
+        console.log("[+] System.exit called"); #종료되는 걸 그냥 로그 찍는걸로 변경
+    }
+});
+"""
+
+process = frida.get_usb_device(1).attach(PACKAGE_NAME)#장치에서 패키지에 맞는 프로세스 가져옴
+script = process.create_script(jscode)
+script.on("message", on_message)
+print("[+] Running Hook")
+script.load()
+sys.stdin.read()
+-------------------------------
+호출은 python 파일이름.py
+
+================================
+2.자바스크립트 직접호출
+frida -U -l 파일이름.js -f 패키지명
+
+
+

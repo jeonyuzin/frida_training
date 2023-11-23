@@ -1,0 +1,8 @@
+frida-ps -U
+-프로세스 전체 목록 패키지명 확인
+
+frida -U -l 자바스크립트 -f 패키지명
+후킹 적용할 자바스크립트 및 패키지명을 찾아 변조
+ex>frida -U -l level1.js -f owasp.mstg.uncrackable1
+
+
