@@ -33,18 +33,25 @@ Ole가 개발한 DBI(Dynamic Binary Instrumentation)
 
 설치 목록
 녹스앱플레이어 +adb환경설정
+
 (루팅된 단말기를 사용하는 경우 adb설정만)
+
 -파이썬 
+
 -프리다 설치
+
 -프리다 서버
+
 
 녹스 기준 root켜기 체크
 녹스 설치 폴더 \bin 에 간편사용을 위해 환경변수 설정
 
 루팅된 폰의 경우 usb디버깅 껐다가 키기
 
+
 프리다 설치
 pip install frida-tools
+
 
 이후 adb shell 환경에서
 getprop ro.product.cpu.abi
@@ -53,17 +60,21 @@ https://github.com/frida/frida/releases에 가서
 frida-server-버전-android-arm 혹은 x86_64인데
 일반 녹스 기준 x86_64였음
 
+
 adb push frida-server /data/local/tmp
 를 통해 서버파일 푸쉬
+
 
 권한 변경 후 
 ./frida-server & 백그라운드 실행 (편의상)
 
+
 포트 사용중이면 kill 후 다시 가동
+
+
 
 다시 frida-tools이 설치된 CLI로 돌아와서
 frida-ps -U
 하면 연결되어있는 디바이스의  프로세스가 보임
 
-===================================== 구축완료
 
