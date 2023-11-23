@@ -31,7 +31,7 @@ Ole가 개발한 DBI(Dynamic Binary Instrumentation)
 - 탈옥 또는 루팅 되지 않은 단말기에서도 사용 가능
 
 
-설치 목록
+# 설치 목록 및 방법
 녹스앱플레이어 +adb환경설정
 
 (루팅된 단말기를 사용하는 경우 adb설정만)
@@ -75,6 +75,6 @@ adb push frida-server /data/local/tmp
 
 다시 frida-tools이 설치된 CLI로 돌아와서
 frida-ps -U
-하면 연결되어있는 디바이스의  프로세스가 보임
+하면 연결되어있는 디바이스의  프로세스가 보인다.
 
 
