@@ -1,0 +1,60 @@
+dexclassLoader.loadClass.overload('java.lang.String').implementation = function(name){}
+
+loadclass 함수중에 string타입을 사용하는 함수를 후킹하겠다는 뜻
+implementation은 자바에서만 사용가능
+class를 계속 긁어서 for문이 자동으로 돌고 있는 상태
+------------------------
+this.
+원래 함수
+implementation사용시 원래 함수와 비교하거나 값을 찍어내는데 사용
+
+--------------------------
+Java.enumerateClassLoaders({
+onMatch: function(class)
+현재 적재된 클래스 읽어온다.
+--------------------------
+Interceptor.attach
+
+모듈명과 메소드명을 알 때
+Interceptor.attach("[Name.so]", "[method Name]"), {
+onEnter: function(args) {
+}
+onLeave: function(args){
+}
+
+onEnter 후킹 함수 진입전 실행 args는 후킹한 함수가 전달받는 인수배열
+onLeave 함수가 진행되고 난 후 실행할 코드
+
+주소값을 알때
+Interceptor.attach(addr , {
+        onEnter: function(args) {
+           ...
+        }
+    });
+
+Interceptor.attach(addr,callback)
+
+----------------------------------------
+Module.findExportByName(null,'abc');
+abc라는 이름을 가진 메소드의 주소값을 알려준다.
+시작함수,open함수의 주소값을 반환받을 때 주로 사용
+모듈이 메모리에 올라와있을때만 사용이 가능하고 만약 모듈이 올라오지 않은 상태라면 null 값을 반환받는다 ★
+
+
+Module.findExportByName("libfoo.so","strncmp")로 사용
+-----------------
+Java.use
+static으로 되어있는 경우 후킹용
+
+Java.choose
+static이 아닌 인스턴스를 choose로 다루어줌
+
+---------------------
+Process.enumerateModues({
+    onMatch: function(module){
+        console.log('module name : ' + module.name + " - " + "Base Address: " + module.base.toString());
+    },
+    onComplete: function(){}
+});
+
+호출되어있을때, 메모리에 올라와있는 모든 라이브러리 목록을 호출해준다.

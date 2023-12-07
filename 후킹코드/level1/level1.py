@@ -26,3 +26,5 @@ script.on("message", on_message)
 print("[+] Running Hook")
 script.load()
 sys.stdin.read()
+
+
