@@ -1,0 +1,18 @@
+burpsuite 연동
+
+버프에 인증서 export 
+[Certificate in DER format] 선택 후 추출
+
+추출한 폴더에서 
+openssl x509 -inform DER -in [인증서이름] -out CA.pem
+
+
+openssl x509 -inform PEM -subject_hash_old -in CA.pem
+
+mv CA.pem 9a5ba575.0
+
+후 녹스 adb명령어로 인증서 옮김
+
+nox_adb remount
+
+adb push 9a5ba575.0 /system/etc/security/cacerts/
