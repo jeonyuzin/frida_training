@@ -1,0 +1,3 @@
+(lldb) breakpoint set -n exit
+(lldb) breakpoint set -n abort
+(lldb) breakpoint set -n _exit

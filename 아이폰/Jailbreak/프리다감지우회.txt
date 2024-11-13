@@ -1,0 +1,51 @@
+프리다 소스코드 직접빌드 or deb파일 경로 변경 후 재패키징
+┌──(kail㉿kali)-[~/ios/extracted]
+└─$ tree
+.
+├── DEBIAN
+│   ├── control
+│   ├── extrainst_
+│   └── prerm
+└── var
+    └── jb
+        ├── Library
+        │   └── LaunchDaemons
+        │       └── re.frida.server.plist
+        └── usr
+            ├── lib
+            │   └── frida
+            │       └── frida-agent.dylib
+            └── sbin
+                └── frida-server
+
+10 directories, 6 files
+
+
+# 1. 파일 및 디렉토리 이름 변경
+mv extracted/var/jb/usr/lib/frida extracted/var/jb/usr/lib/jeonyuzin
+mv extracted/var/jb/usr/lib/jeonyuzin/frida-agent.dylib extracted/var/jb/usr/lib/jeonyuzin/jeonyuzin-agent.dylib
+mv extracted/var/jb/usr/sbin/frida-server extracted/var/jb/usr/sbin/jeonyuzin-server
+mv extracted/var/jb/Library/LaunchDaemons/re.frida.server.plist extracted/var/jb/Library/LaunchDaemons/re.jeonyuzin.server.plist
+
+# 2. 내용 수정
+sed -i 's/frida/jeonyuzin/g' extracted/DEBIAN/control
+sed -i 's/frida/jeonyuzin/g' extracted/DEBIAN/extrainst_
+sed -i 's/frida/jeonyuzin/g' extracted/DEBIAN/prerm
+
+dpkg-deb --build extracted jeonyuzin-server.deb
+
+
+포트 감지 우회
+./jeonyuzin(frida-server) -l 0.0.0.0:7777
+
+클라이언트에서는 
+frida-ps -a -H 192.168.0.50:7777
+
+frida -H 192.168.0.49:7777 -f com.kbstar.kbbank -l script.js
+
+
+
+
+python 이용 시 
+ssh -L 27042:127.0.0.1:7777 root@192.168.0.50
+get_remote_device()로붙음

@@ -1,0 +1,6 @@
+_ARCLite는 iOS 애플리케이션에서 **Automatic Reference Counting (ARC)**와 관련된 비공개 내부 클래스 또는 네임스페이스
+
+
+MPMediaLibraryEntityPropertyTranslator 클래스는 MPMediaLibrary 프레임워크의 일부로 보이며, iOS의 미디어 라이브러리 관련 클래스일 가능성이 큽니다.
+
+_CFN은 iOS와 macOS에서 Core Foundation의 일부로 추정되는 비공개 네임스페이스 또는 클래스일 가능성이 큽니다. 

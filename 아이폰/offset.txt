@@ -1,0 +1,11 @@
+NewScript.py> Running...
+('Found SVC instruction at:', 100656d84)//100656d70
+('Found SVC instruction at:', 1006e631c)//1006e62f8
+('Found SVC instruction at:', 1006e93b8)//1006e9394
+('Found SVC instruction at:', 100730cc8)//100730ca4
+('Found SVC instruction at:', 100731e1c)//100731de8
+('Found SVC instruction at:', 10079c86c)//10079c818
+('Found SVC instruction at:', 1007f3608)//1007f35f8
+('Found SVC instruction at:', 1007f3630)//1007f3624
+('Found SVC instruction at:', 101807550)//101807530 // makeSVC
+NewScript.py> Finished!

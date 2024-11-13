@@ -1,0 +1,199 @@
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x1507ced08
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x28001fd88
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x14be0e0c8
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x2800046c8
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x14be10cb8
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x280004cc8
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x14d412c88
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x280008848
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x14be16d18
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x280004608
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x14d418428
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x280008b48
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x14d50b8e8
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x280010488
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x14d509298
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x280010188
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x14d41e0a8
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x280008e48
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x14d4241a8
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x2800092c8
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x14be1dfc8
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x280005208
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[Remote::com.kbstar.kbbank ]->
+[Remote::com.kbstar.kbbank ]->
+[Remote::com.kbstar.kbbank ]-> exi[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x14be23968
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x2800055c8
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[Remote::com.kbstar.kbbank ]-> exit
+
+Thank you for using Frida!
+
+C:\Users\SECUI\Desktop\변조실\아이폰\Jailbreak>

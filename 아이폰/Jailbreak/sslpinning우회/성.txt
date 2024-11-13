@@ -1,0 +1,360 @@
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x10d82a6a8
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x12486bf28
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x28066c488
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x280673908
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] SSL_get0_peer_certificates called
+[*] SSL_get0_peer_certificates returned: 0x283d61538
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x10
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] SSL_get0_peer_certificates called
+[*] SSL_get0_peer_certificates returned: 0x283dcf698
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x10
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x10
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x10
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0xf
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0xf
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] SSL_get0_peer_certificates called
+[*] SSL_get0_peer_certificates returned: 0x283d69418
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x1
+[*] SSL_do_handshake returned: 0x1
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] SSL_get0_peer_certificates called
+[*] SSL_get0_peer_certificates returned: 0x283ddce48
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x1
+[*] SSL_do_handshake returned: 0x1
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x1248759d8
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x280665f88
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] SSL_get0_peer_certificates called
+[*] SSL_get0_peer_certificates returned: 0x283ddefa8
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x10
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0xf
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] SSL_get0_peer_certificates called
+[*] SSL_get0_peer_certificates returned: 0x283dd8bd8
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x1
+[*] SSL_do_handshake returned: 0x1
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x10d81edd8
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x2806412c8
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_CTX_set_custom_verify called
+[*] SSL_CTX_set_custom_verify returned: 0x10d86bcf8
+[*] boringssl_context_set_verify_mode called
+[*] SSL_set_custom_verify called
+[*] SSL_set_custom_verify returned: 0x280670cc8
+[*] boringssl_context_set_verify_mode returned: 0x0
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x2
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x3
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] SSL_get0_peer_certificates called
+[*] SSL_get0_peer_certificates returned: 0x283d57578
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x10
+[*] SSL_do_handshake returned: 0xffffffff
+[*] SSL_do_handshake called
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x4
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE called
+[*] _ZN4bssl26ssl_client_handshake_stateEPNS_13SSL_HANDSHAKEE returned: 0x1b209ee44
+[*] SSL_get0_peer_certificates called
+[*] SSL_get0_peer_certificates returned: 0x283d4f908
+[*] _ZN4bssl20ssl_client_handshakeEPNS_13SSL_HANDSHAKEE returned: 0x1
+[*] SSL_do_handshake returned: 0x1
+[Remote::com.kbstar.kbbank ]->
+[Remote::com.kbstar.kbbank ]-> exit
+
+Thank you for using Frida!
+
+C:\Users\SECUI\Desktop\변조실\아이폰\Jailbreak>

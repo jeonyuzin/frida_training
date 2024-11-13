@@ -1,0 +1,293 @@
+아이폰 데이터 저장구조
+
+Plist- Local Data Storage
+(Property List)
+
+애플리케이션 데이터 및 설정 정보 저장하는데 사용되는 xml
+(★자체 암호화가 없어서 중요한 정보 저장 시 정보 누출 가능성 있음)
+Info.plist에는 버전 정보 , 실행가능한 바이너리 이름, 지원되는 iOS 버전 및 디바이스 모델 등의 정보 저장
+/var/containers/Bundle/Application/$uuid/DVIA-v2.app/Info.plist
+
+CFBundleShortVersionString: 사용자에게 표시되는 애플리케이션의 버전 (예: 1.0).
+CFBundleVersion: 빌드 번호 (예: 1).
+MinimumOSVersion : 키를 통해 이 애플리케이션이 동작할 수 있는 최소 iOS 버전
+UIRequiredDeviceCapabilities : GPS 등 기능요구
+CFBundleExecutable 키는 애플리케이션 실행 시 사용할 바이너리 파일의 이름을 지정합니다.
+
+uuid는 설치 시 동적으로 생성되며 , 설치 전 ipa 파일로는 확인 불가능
+
+find . -name "*DVIA*" 으로 확인
+
+
+번들 컨테이너
+/var/containers/Bundle/Application/진단앱
+
+데이터 컨테이너 /private/var/mobile/Containers/Data
+
+
+실제 진단 시에는
+모든 디렉터리를 하나씩 다 확인해야 한다.
+/private/var/mobile/Containers/Data/Application/480EE5EE-F306-40E4-BD03-B491C563E397/Documents
+
+
+------------
+NSUserDefaults는 iOS 및 macOS 애플리케이션에서 데이터를 간단히 저장하고 불러오기 위한 경량 데이터 저장소입니다. 주로 사용자가 설정한 값이나 앱이 유지해야 할 작은 데이터(예: 설정값, 로그인 상태, 사용자 이름 등)를 저장할 때 사용됩니다.
+(이 친구도 암호화 로직을 따로 도입하지 않으면 평문 ★)
+
+주요 특징
+Key-Value 형태: 데이터는 키-값 쌍으로 저장됩니다.
+간단한 데이터 저장: 문자열, 정수, 부울, 배열 등 간단한 데이터 형식을 저장할 수 있습니다.
+앱 재시작 시 유지: 앱을 종료했다가 다시 시작해도 데이터가 유지됩니다.
+iCloud 동기화 가능: 필요한 경우 iCloud와 동기화하여 여러 기기에서 데이터를 공유할 수 있습니다.
+
+사용 예제
+let defaults = UserDefaults.standard
+defaults.set("Yujae", forKey: "username")
+
+//불러오기
+let defaults = UserDefaults.standard
+if let username = defaults.string(forKey: "username") {
+    print("Username: \(username)")
+}
+
+//삭제
+defaults.removeObject(forKey: "username")
+
+최신API에서 UserDefaults.statndard로 대체됨.
+
+NSUserDefaults 또는 **UserDefaults**를 통해 저장된 데이터는 iOS와 macOS에서 애플리케이션의 샌드박스 내부에 있는 특정 파일에 저장됩니다. 이 파일은 시스템에 의해 자동으로 관리되며, 앱이 삭제되면 해당 데이터도 함께 삭제됩니다.
+/var/mobile/Containers/Data/Application/<UUID>/Library/Preferences/com.example.myapp.plist
+
+문제에 설정된 파일은 com.highaltitudehacks.DVIAswiftv2.VTWUJ4YG5F.plist
+
+
+------------------
+keyChain
+강력한 암호화:키체인에 저장된 데이터는 AES-256 암호화로 보호됩니다.
+사용자 인증(예: Face ID, Touch ID)을 통해 접근할 수 있습니다.
+
+자동 동기화: iCloud Keychain을 활성화하면 여러 기기 간에 보안 데이터가 자동으로 동기화됩니다.
+iPhone, iPad, Mac 간에 비밀번호와 카드 정보가 공유됩니다.
+
+애플리케이션 샌드박스 보호:
+각 앱은 기본적으로 자신만의 Keychain 항목에 접근할 수 있습니다. 
+다른 앱과 공유할 수 없지만, 같은 개발자의 앱끼리는 Keychain Sharing을 통해 데이터를 공유할 수 있습니다.
+
+데이터 영구 보관: 앱을 삭제해도 Keychain에 저장된 데이터는 삭제되지 않습니다. 재설치 시 해당 데이터를 다시 사용할 수 있습니다.
+
+★★사용처 : 로그인 정보 저장, API키나 토큰 관리, 신용카드 정보 저장, 앱 간 데이터 공유 ★★
+
+강력한 보안 및 Face, Touch ID와 같은 인증 매커니즘을 활용할 수 있지만 앱 삭제 후 데이터 유지의 한계가 있음.
+
+사용 예제 (코드)
+import Security
+
+func savePassword(service: String, account: String, password: String) {
+    let data = password.data(using: .utf8)!
+    let query: [String: Any] = [
+        kSecClass as String: kSecClassGenericPassword, //여기에 저장
+        kSecAttrService as String: service,
+        kSecAttrAccount as String: account,
+        kSecValueData as String: data
+    ]
+    SecItemAdd(query as CFDictionary, nil)
+}
+
+불러오기
+func getPassword(service: String, account: String) -> String? {
+    let query: [String: Any] = [
+        kSecClass as String: kSecClassGenericPassword,
+        kSecAttrService as String: service,
+        kSecAttrAccount as String: account,
+        kSecReturnData as String: true,
+        kSecMatchLimit as String: kSecMatchLimitOne
+    ]
+    
+    var item: AnyObject?
+    if SecItemCopyMatching(query as CFDictionary, &item) == errSecSuccess {
+        if let data = item as? Data {
+            return String(data: data, encoding: .utf8)
+        }
+    }
+    return nil
+}
+
+iOS 키체인은 암호화된 데이터베이스!
+키체인은 SQLite DB로 구현되어 있음!
+보안상 안전해 보이지만 복호화 도구(keychain_dumper)가 존재함
+https://github.com/ptoomey3/Keychain-Dumper/releases
+
+– /private/var/Keychains/keychain-2.db 에 키체인 데이터가 저장됨
+
+--------------------------
+Core Data Framework
+Core Data는 iOS, macOS, tvOS, 및 watchOS 앱 개발을 위해 제공되는 프레임워크로, 
+애플리케이션이 데이터를 관리하고 영구 저장할 수 있도록 도와줍니다. 
+단순한 데이터베이스가 아닌, 객체 그래프 관리 및 ORM(Object-Relational Mapping) 
+
+객체 관계 정의, 데이터 영구 저장(SQL 필요없이 Core Data가 처리), Undo/Redo 구현 가능, NSPredicate ,Fetch Request 제공
+
+Core Data는 다음과 같은 주요 컴포넌트로 구성됩니다:
+Managed Object Model (NSManagedObjectModel):
+
+데이터 구조를 정의하는 모델입니다. 엔티티(Entity)와 속성(Property)를 설정합니다.
+Managed Object Context (NSManagedObjectContext):
+
+데이터 객체를 메모리에서 관리하며, 데이터 변경 사항을 영구 저장소와 동기화합니다.
+Persistent Store Coordinator (NSPersistentStoreCoordinator):
+
+Core Data와 실제 영구 저장소(SQLite 등) 사이의 연결을 담당합니다.
+Persistent Store:
+
+데이터가 영구적으로 저장되는 위치입니다. SQLite가 기본 저장소이지만, XML이나 메모리 내 저장소도 지원합니다.
+
+사용예시
+import CoreData
+import UIKit
+
+class DataManager {
+    static let shared = DataManager()
+    let persistentContainer: NSPersistentContainer
+
+    private init() {
+        persistentContainer = NSPersistentContainer(name: "MyAppModel")
+        persistentContainer.loadPersistentStores { _, error in
+            if let error = error {
+                fatalError("Failed to load Core Data stack: \(error)")
+            }
+        }
+    }
+
+    func saveContext() {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                fatalError("Failed to save context: \(error)")
+            }
+        }
+    }
+}
+
+보통은 /var/mobile/Containers/Data/Application/<UUID>/Library/Application Support/<앱 이름>.sqlite
+여기에 저장
+
+--------------
+webkit Caching =>  Service Workers와 Cache Storage  이걸로대체
+오프라인 지원 강화: Service Workers는 사용자가 방문한 페이지를 오프라인에서 제공할 수 있도록 지원합니다.
+더 나은 보안: HTTPS를 통해서만 작동하며, 더 안전한 캐시 관리를 제공합니다.
+세부 제어: 개발자가 캐시된 콘텐츠를 더 정밀하게 제어할 수 있습니다.
+백그라운드 동작: Service Workers는 사용자가 페이지를 닫아도 푸시 알림을 보내거나 데이터 동기화를 처리할 수 있습니다
+
+
+------------------
+Realm 
+
+SQLite와 같은 관계형 데이터베이스가 아닌 객체 기반 데이터베이스입니다.
+ORM(Object Relational Mapping) 없이도 앱 코드에서 객체를 바로 저장하고 불러올 수 있습니다.
+디스크 I/O 최적화로 빠르게 데이터를 읽고 쓸 수 있습니다.
+대규모 데이터 처리에서도 성능 저하가 적습니다.
+복잡한 SQL 문법 대신, 직관적인 API로 데이터를 처리할 수 있습니다.
+Realm은 오프라인에서도 데이터를 저장할 수 있으며, 인터넷 연결이 복구되면 데이터를 동기화할 수 있습니다.
+클라우드와 동기화하는 기능을 지원해, 여러 기기에서 실시간 데이터 동기화가 가능합니다.
+
+사용 예제 코드
+import RealmSwift
+
+class Dog: Object {
+    @objc dynamic var name = ""
+    @objc dynamic var age = 0
+}
+
+//저장
+let realm = try! Realm()
+let dog = Dog()
+dog.name = "Buddy"
+dog.age = 3
+
+try! realm.write {
+    realm.add(dog)
+}
+//쿼리
+let puppies = realm.objects(Dog.self).filter("age < 2")
+print("Puppies: \(puppies.count)")
+
+
+ios앱의 샌드박스 디렉터리
+/var/mobile/Containers/Data/Application/<UUID>/
+
+안드
+/data/data/<패키지_이름>/
+
+
+Documents: 사용자 생성 파일을 저장합니다. iTunes나 iCloud 백업에 포함됩니다.
+Library: 
+-Preferences: UserDefaults 데이터를 저장합니다.
+-Caches: 임시 데이터가 저장되며, 필요에 따라 시스템이 삭제할 수 있습니다.
+tmp: 앱이 실행 중에 사용하는 임시 데이터가 저장됩니다. 앱이 종료되거나 재시작할 때 시스템이 이 데이터를 삭제합니다.
+
+분석은 realm studio를 통해 가능(sdk 버전과 파일 형식 버전이 다르면 아노딤)
+sdk <v5.4는 버전10, 이상은 11로
+sdk v4.x는 파일 형식9버전
+
+----------------------------
+Couchbase Lite는 모바일 디바이스용 NoSQL 데이터베이스로, 
+주로 오프라인 데이터 관리와 동기화 기능을 제공합니다. 
+이는 iOS, Android, 그리고 다양한 플랫폼에서 사용되며, 
+클라우드 또는 로컬 서버와의 실시간 동기화를 지원합니다.
+
+Couchbase Lite의 사용 예시
+모바일 애플리케이션: 사용자 설정, 캐시 데이터, 메시지 기록을 오프라인에서 유지.
+IoT 디바이스: 인터넷 연결이 불안정한 환경에서도 데이터를 수집 및 저장.
+헬스케어 애플리케이션: 환자의 데이터가 동기화되기 전까지 로컬에 안전하게 저장
+
+Couchbase Lite의 구조
+Local Database:각 디바이스는 로컬 데이터베이스 인스턴스를 가지고 데이터를 저장합니다.
+Sync Gateway:로컬 데이터베이스와 클라우드 Couchbase 서버 간에 양방향 동기화를 지원합니다.
+Conflict Resolution:여러 클라이언트가 데이터를 동시에 업데이트할 때 충돌 관리를 자동으로 수행합니다.
+
+사용 예제
+
+let config = DatabaseConfiguration()
+config.directory = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("CouchbaseLite")
+
+let database = try! Database(name: "dvcouchbasedb", config: config)
+
+
+
+저장 경로
+/var/mobile/Containers/Data/Application/<UUID>/Documents/<database_name>.cblite2
+
+
+
+--------------------
+
+YapDatabase는 Objective-C와 Swift로 작성된 고성능 키-값 저장소로, 
+주로 iOS 및 macOS 애플리케이션에서 사용됩니다. 
+이는 단순한 키-값 데이터베이스 이상으로, 다중 읽기/쓰기 트랜잭션, 동시성 제어, 쿼리 필터링, 그리고 오프라인 데이터 관리와 같은 기능을 제공합니다.
+
+사용예제
+import YapDatabase
+
+// YapDatabase 인스턴스 생성
+let database = YapDatabase(path: "path/to/yapdatabase.sqlite")
+
+// 쓰기 트랜잭션 시작
+database.asyncReadWrite { transaction in
+    transaction.setObject("value", forKey: "key", inCollection: "default")
+}
+
+// 데이터 읽기
+database.asyncRead { transaction in
+    if let value = transaction.object(forKey: "key", inCollection: "default") as? String {
+        print("Fetched value: \(value)")
+    }
+}
+
+보통 /var/mobile/Containers/Data/Application/<UUID>/Library/YapDatabase/ 저장됨.
+
+
+
+
+

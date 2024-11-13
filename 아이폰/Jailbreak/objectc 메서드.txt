@@ -1,0 +1,20 @@
++ : 클래스 메서드 (Class Method)
+클래스 자체에 대한 메서드로, 
+클래스 이름을 통해 호출할 수 있습니다. 인스턴스가 아닌 클래스에 직접적으로 관련된 작업을 수행할 때 사용됩니다.
+예를 들어 [MyClass myClassMethod] 형식으로 호출합니다.
+
+
+- : 인스턴스 메서드 (Instance Method)
+특정 인스턴스(객체)에 대한 메서드로, 인스턴스를 통해 호출해야 합니다. 
+인스턴스에 속한 데이터를 사용하거나 수정하는 작업을 수행할 때 사용됩니다.
+예를 들어 [[myObject myInstanceMethod] 형식으로 호출합니다.
+
+
+
+
+// 클래스 메서드 호출
+[MyClass myClassMethod];
+
+// 인스턴스 메서드 호출
+MyClass *myObject = [[MyClass alloc] init];
+[myObject myInstanceMethod];
