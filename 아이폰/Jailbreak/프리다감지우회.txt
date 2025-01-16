@@ -43,7 +43,7 @@ frida-ps -a -H 192.168.0.50:7777
 
 frida -H 192.168.0.49:7777 -f com.kbstar.kbbank -l script.js
 
-
+frida-trace -H 192.168.0.61:7777 -f com.secui.ios.esp -i "*encrypt*"
 
 
 python 이용 시 
